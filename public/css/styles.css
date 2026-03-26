@@ -1,0 +1,30 @@
+/* public/css/styles.css */
+
+/* Efecto de elevación elegante para las tarjetas de los mazos */
+.card-deck { 
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; 
+}
+
+.card-deck:hover { 
+    transform: translateY(-5px); 
+    box-shadow: 0 12px 20px -5px rgba(197, 160, 89, 0.2); 
+    border-color: rgba(197, 160, 89, 0.5);
+}
+
+/* Scrollbar personalizado oscuro para que combine con el diseño */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #111111;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #333333;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #C5A059;
+}
