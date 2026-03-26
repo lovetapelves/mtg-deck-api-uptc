@@ -1,4 +1,4 @@
-import 'dotenv/config'; // Esto DEBE ser la primera línea para cargar el .env
+import 'dotenv/config';
 import express from 'express';
 import mongoose from 'mongoose';
 import cors from 'cors';

@@ -10,8 +10,8 @@ const options = {
         },
         servers: [
             {
-                url: 'http://localhost:3000',
-                description: 'Servidor Local',
+
+                url: "https://api-mtg-uptc.onrender.com"
             },
         ],
         components: {
