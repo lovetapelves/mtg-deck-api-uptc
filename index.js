@@ -1,11 +1,12 @@
 import 'dotenv/config';
 import express from 'express';
-import mongoose from 'mongoose';
 import cors from 'cors';
+import mongoose from 'mongoose';
 import swaggerUi from 'swagger-ui-express';
 import { specs } from './swagger.mjs';
 import path from 'path';
-
+import authRoutes from './routes/auth-routes.mjs';
+import deckRoutes from './routes/deck-routes.mjs';
 // 1. Inicializamos la aplicación
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -26,11 +27,11 @@ app.get('/', (req, res) => {
     res.json({ mensaje: 'API de Deck Builder funcionando correctamente' });
 });*/
 
-import authRoutes from './routes/auth-routes.mjs';
+
 // Le decimos a Express dónde buscar los archivos de la página web
 app.use(express.static('public'));
 app.use('/auth', authRoutes);
-import deckRoutes from './routes/deck-routes.mjs';
+
 app.use('/decks', deckRoutes);
 // Ruta para ver la documentación visual
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(specs));
