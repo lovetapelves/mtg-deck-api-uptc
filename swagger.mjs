@@ -11,7 +11,7 @@ const options = {
         servers: [
             {
 
-                url: "https://api-mtg-uptc.onrender.com"
+                url: "https://mtg-deck-api-uptc.onrender.com"
             },
         ],
         components: {
